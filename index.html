@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Form 1</title>
+</head>
+<body>
+    
+    <form class="form-1">
+        <div class="form-heading">
+            <h3>Want to host a webinar?</h3>
+            <p>Fill the details below and we'll take you to a detailed form where you can add more information about your webinar.</p>
+        </div>
+        <div class="location-online-box">
+           <label for="Location">Location</label>
+           <div class="location-online-div">
+               <div class="location">
+                   <i class="fas fa-crosshairs"></i>
+                   <input type="text" id="location" placeholder="Enter location name" required>
+               </div>
+               <div class="online">
+                   <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Online webinar</label>
+               </div>
+           </div>
+        </div>
+          <div class="date-div">
+              <label for="date">Date</label>
+              <input type="date" id="date" required>
+          </div>
+        <div class="terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I have agreed to the <a href="#">Terms & Conditions</a>.</label>
+        </div>
+        <button class="submitBtn">Continue</button>
+    </form>
+   
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+:root{
+    --white:#fff;
+    --black:#111;
+    --primary-bg:#0D0D14;
+    --primary-pink:#BC3756;
+    --primary-headings:#7C84A4;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-size: 1.6rem;
+}
+
+/* End of Common Styles */
+
+/* start of Form-1 */
+.form-1{
+    background-color: var(--primary-bg);
+    max-width: 60rem;
+    width: 60rem;
+    padding: 8rem;
+    border-radius: 1rem;
+    color: var(--primary-headings);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 .2rem .5rem var(--primary-headings);
+    overflow: hidden;
+}
+.form-heading{
+    margin-bottom: 2rem;
+}
+.form-heading h3{
+    margin-bottom: 1rem;
+}
+.form-heading p{
+    font-size: 1.4rem;
+}
+.location-online-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.location-online-box label{
+    margin-bottom: .4rem;
+}
+.location-online-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.location{
+    border: .1rem solid #BC3756;
+    position: relative;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location i{
+    color: var(--primary-pink);
+}
+.location input[type="text"]{
+    border: none;
+    background: none;
+    padding: .5rem 1rem; 
+    font-size: 1.4rem;
+    font-family: inherit;
+    color: var(--primary-pink);
+}
+.location input[type="text"]::placeholder{
+    color: var(--primary-headings);
+}
+.online{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.online label{
+    cursor: pointer;
+}
+.online input[type="checkbox"],
+.terms input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border: .1rem solid var(--primary-pink);
+    border-radius: .3rem;
+    margin-right: .7rem;
+    cursor: pointer;
+    position: relative;
+}
+.online input[type="checkbox"]:checked,
+.terms input[type="checkbox"]:checked{
+    background: var(--primary-pink);
+    border: none;
+}
+.online label{
+    font-size: 1.8rem;
+}
+.date-div{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+.date-div input[type="date"]{
+    border: .1rem solid var(--primary-pink);
+    color: var(--primary-headings);
+    background: none;
+    padding: .5rem 1rem; 
+    font-size: 1.4rem;
+    font-family: inherit;
+    border-radius: .3rem;
+}
+.date-div input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+.terms{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terms label{
+    cursor: pointer;
+}
+.terms label a{
+    color: var(--primary-pink);
+}
+.submitBtn{
+    border: none;
+    background: var(--primary-pink);
+    cursor: pointer;
+    border-radius: .4rem;
+    padding: 1rem 4rem;
+    color: var(--white);
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+.submitBtn:active{
+    transform: scale(.98);
+}
+
+@media screen and (max-width:650px) {
+    .form-1{
+        padding: 5rem;
+        width: 55rem;
+    }
+}
+@media screen and (max-width:650px) {
+    .form-1{
+        padding: 5rem;
+        width: 50rem;
+    }
+    .location-online-div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .location{
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:550px) {
+    .form-1{
+        padding: 4rem;
+        width: 50rem;
+        max-width: 90vw;
+    }
+    html{
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:420px) {
+   html{
+        font-size: 50%;
+    }
+
+}
+@media screen and (max-width:400px) {
+   html{
+        font-size: 45%;
+    }
+
+}
+@media screen and (max-width:300px) {
+   html{
+        font-size: 35%;
+    }
+
+}
+/* end of Form-1 */
